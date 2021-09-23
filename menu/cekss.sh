@@ -31,6 +31,6 @@ echo " $akun - $port"
 echo "$jum"; x=$(( "$x" + 1 ))
 echo "-------------------------------"
 done
-echo -e "Mod by SL"
+echo -e "Mod By Jalingkut Trix"
 
 

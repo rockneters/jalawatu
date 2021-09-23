@@ -79,5 +79,5 @@ AllowedIPs = $CLIENT_ADDRESS/32" >>"/etc/wireguard/$SERVER_WG_NIC.conf"
 	echo -e "==============================="
 	echo -e "Expired On     : $exp"
 	echo -e ""
-	echo -e "Mod By Rocknet Store Project"
+	echo -e "Mod By Jalingkut Trix"
 	rm -f /root/wg0-client-$CLIENT_NAME.conf
