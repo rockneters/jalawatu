@@ -1,6 +1,4 @@
 #!/bin/bash 
-
-IP=$(cat /etc/IP)
 source /var/lib/crot-script/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/v2ray/domain)
@@ -34,7 +32,7 @@ cat>/etc/v2ray/$user-tls.json<<EOF
       "v": "2",
       "ps": "${user}",
       "add": "${domain}",
-      "port": "443",
+      "port": "4443",
       "id": "${uuid}",
       "aid": "2",
       "net": "ws",
@@ -49,7 +47,7 @@ cat>/etc/v2ray/$user-none.json<<EOF
       "v": "2",
       "ps": "${user}",
       "add": "${domain}",
-      "port": "80",
+      "port": "780",
       "id": "${uuid}",
       "aid": "2",
       "net": "ws",
@@ -82,4 +80,4 @@ echo -e "================================="
 echo -e "link none TLS  : ${vmesslink2}"
 echo -e "================================="
 echo -e "Expired On     : $exp"
-echo -e "Mod By Jalingkut Trix"
+echo -e "Mod By SL"
