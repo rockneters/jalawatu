@@ -105,3 +105,5 @@ echo "   - Telegram                 : t.me/RocknetStore"  | tee -a log-install.t
 echo "--------------------------------------------------------------------------" | tee -a log-install.txt
 echo ""
 echo "Please reboot...!!"
+echo ""
+rm -f setup.sh
