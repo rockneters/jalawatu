@@ -44,6 +44,7 @@ wget https://raw.githubusercontent.com/${GitUser}/jalawatu/main/install/shadowso
 wget https://raw.githubusercontent.com/${GitUser}/jalawatu/main/install/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 wget https://raw.githubusercontent.com/${GitUser}/jalawatu/main/install/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/${GitUser}/jalawatu/main/install/set-br.sh && chmod +x set-br && ./set-br.sh
+wget https://raw.githubusercontent.com/${GitUser}/jalawatu/main/install/ins-menu.sh && chmod +x ins-menu.sh && ./ins-menu.sh
 cd
 rm -f ssh-vpn.sh
 rm -f websocket.sh
