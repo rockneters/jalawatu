@@ -19,7 +19,7 @@ else
 echo -e "${red}Permintaan Ditolak!${NC}";
 echo "Hanya untuk pengguna terdaftar"
 fi
-
+apt update; apt-get -y upgrade
 mkdir /etc/v2ray
 mkdir /var/lib/premium-script
 clear
