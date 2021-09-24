@@ -29,7 +29,7 @@ read -p " Please input your domain/subdomain : " domain
 echo "$MYIP" >> /var/lib/premium-script/ipvps.conf
 echo "$domain" >> /etc/v2ray/domain
 echo ""
-echo -e "\e[0;32m Success domain/subdomain Has Been Add! "
+echo ""Success ! domain/subdomain Has Been Add !"
 sleep 1
 clear
 #wget https://github.com/${GitUser}/
