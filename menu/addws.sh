@@ -34,7 +34,7 @@ cat>/etc/v2ray/$user-tls.json<<EOF
       "add": "${domain}",
       "port": "8443",
       "id": "${uuid}",
-      "aid": "2",
+      "aid": "64",
       "net": "ws",
       "path": "/v2ray",
       "type": "none",
@@ -49,7 +49,7 @@ cat>/etc/v2ray/$user-none.json<<EOF
       "add": "${domain}",
       "port": "80",
       "id": "${uuid}",
-      "aid": "2",
+      "aid": "64",
       "net": "ws",
       "path": "/v2ray",
       "type": "none",
@@ -70,7 +70,7 @@ echo -e "Server IP      : $PUBLIC_IP"
 echo -e "port TLS       : 8443"
 echo -e "port none TLS  : 80"
 echo -e "id             : ${uuid}"
-echo -e "alterId        : 2"
+echo -e "alterId        : 64"
 echo -e "Security       : auto"
 echo -e "network        : ws"
 echo -e "path           : /v2ray"
@@ -80,4 +80,4 @@ echo -e "================================="
 echo -e "link none TLS  : ${vmesslink2}"
 echo -e "================================="
 echo -e "Expired On     : $exp"
-echo -e "Mod By SL"
+echo ""
