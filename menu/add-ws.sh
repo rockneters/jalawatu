@@ -39,7 +39,7 @@ cat>/etc/v2ray/$user-tls.json<<EOF
       "id": "${uuid}",
       "aid": "64",
       "net": "ws",
-      "path": "/vpninjector",
+      "path": "/v2ray",
       "type": "none",
       "host": "",
       "tls": "tls"
@@ -54,7 +54,7 @@ cat>/etc/v2ray/$user-none.json<<EOF
       "id": "${uuid}",
       "aid": "64",
       "net": "ws",
-      "path": "/vpninjector",
+      "path": "/v2ray",
       "type": "none",
       "host": "",
       "tls": "none"
@@ -75,13 +75,14 @@ echo -e "Domain         : ${domain}"
 echo -e "port TLS       : ${tls}"
 echo -e "port none TLS  : ${none}"
 echo -e "id             : ${uuid}"
-echo -e "alterId        : 32"
+echo -e "alterId        : 64"
 echo -e "Security       : auto"
 echo -e "network        : ws"
-echo -e "path           : /vpninjector"
+echo -e "path           : /v2ray"
 echo -e "================================="
 echo -e "link TLS       : ${vmesslink1}"
 echo -e "================================="
 echo -e "link none TLS  : ${vmesslink2}"
 echo -e "================================="
 echo -e "Expired On     : $exp"
+echo ""
