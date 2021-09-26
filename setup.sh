@@ -55,8 +55,7 @@ clear
 echo "================================="
 echo "Installation has been completed!!"
 echo "================================="
-sleep 3
-clear
+sleep 3s
 echo "-----------------------------Mod by ROCKNET VPN---------------------------" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "--------------------------------------------------------------------------" | tee -a log-install.txt
