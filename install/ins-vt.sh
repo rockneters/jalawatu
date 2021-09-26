@@ -138,7 +138,7 @@ cat> /etc/v2ray/none.json << END
         "clients": [
           {
             "id": "${uuid}",
-            "alterId": 64
+            "alterId": 2
 #none
           }
         ]
@@ -146,7 +146,7 @@ cat> /etc/v2ray/none.json << END
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/v2ray",
+          "path": "/vpninjector",
           "headers": {
             "Host": ""
           }
@@ -243,7 +243,7 @@ cat> /etc/v2ray/vless.json << END
           ]
         },
         "wsSettings": {
-          "path": "/v2ray",
+          "path": "/vpninjector",
           "headers": {
             "Host": ""
           }
@@ -316,7 +316,7 @@ cat> /etc/v2ray/vnone.json << END
   },
   "inbounds": [
     {
-      "port": 80,
+      "port": 89,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -330,7 +330,7 @@ cat> /etc/v2ray/vnone.json << END
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/v2ray",
+          "path": "/vpninjector",
           "headers": {
             "Host": ""
           }
@@ -475,8 +475,6 @@ iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2083 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8880 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 3443 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 3443 -j ACCEPT
 iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
@@ -492,12 +490,12 @@ systemctl restart trojan
 systemctl enable trojan
 systemctl restart v2ray
 systemctl enable v2ray
-iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8443 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 4443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 5443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 6443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 880 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8443 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 4443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 5443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 6443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 880 -j ACCEPT
