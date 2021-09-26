@@ -518,7 +518,7 @@ systemctl enable v2ray
 cd /usr/bin
 wget -O addws "https://raw.githubusercontent.com/${GitUser}/jalawatu/main/menu/add-ws.sh"
 wget -O addvless "https://raw.githubusercontent.com/${GitUser}/jalawatu/main/menu/add-vless.sh"
-wget -O addtr "https://raw.githubusercontent.com/${GitUser}/jalawatu/main/menu/add-tr.sh"
+wget -O add-tr "https://raw.githubusercontent.com/${GitUser}/jalawatu/main/menu/addtr.sh"
 wget -O delws "https://raw.githubusercontent.com/${GitUser}/jalawatu/main/menu/del-ws.sh"
 wget -O delvless "https://raw.githubusercontent.com/${GitUser}/jalawatu/main/menu/del-vless.sh"
 wget -O deltr "https://raw.githubusercontent.com/${GitUser}/jalawatu/main/menu/del-tr.sh"
@@ -534,7 +534,7 @@ wget -O xptr "https://raw.githubusercontent.com/${GitUser}/jalawatu/main/menu/xp
 wget -O xpvless "https://raw.githubusercontent.com/${GitUser}/jalawatu/main/menu/xp-vless.sh"
 chmod +x addws
 chmod +x addvless
-chmod +x addtr
+chmod +x add-tr
 chmod +x delws
 chmod +x delvless
 chmod +x deltr
