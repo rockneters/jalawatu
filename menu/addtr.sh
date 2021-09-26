@@ -1,5 +1,5 @@
 #!/bin/bash
-source /var/lib/crot-script/ipvps.conf
+source /var/lib/premium-script/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/v2ray/domain)
 else
@@ -33,5 +33,5 @@ echo -e "link           : ${trojanlink}"
 echo -e "================================="
 echo -e "Expired On     : $exp"
 echo -e ""
-echo -e "Mod By SL"
+echo -e "Mod By Rocknet Store"
 
