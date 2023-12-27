@@ -35,13 +35,13 @@ cat> /etc/v2ray/config.json << END
   },
   "inbounds": [
     {
-      "port": 8443,
+      "port": 443,
       "protocol": "vmess",
       "settings": {
         "clients": [
           {
             "id": "${uuid}",
-            "alterId": 64
+            "alterId": 0
 #tls
           }
         ]
@@ -138,7 +138,7 @@ cat> /etc/v2ray/none.json << END
         "clients": [
           {
             "id": "${uuid}",
-            "alterId": 2
+            "alterId": 0
 #none
           }
         ]
